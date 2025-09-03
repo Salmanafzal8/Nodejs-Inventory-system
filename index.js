@@ -1,3 +1,7 @@
- const addItem = require("./addItem")
+const addItem = require("./addItem");
+const deleteItem = require("./deleteItem");
 
- addItem()
+
+deleteItem();
+
+addItem();
