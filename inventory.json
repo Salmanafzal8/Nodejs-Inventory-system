@@ -4,7 +4,7 @@
     "name": "Milk",
     "category": "food",
     "quantity": 10,
-    "price": 200,
+    "price": 700,
     "minStockLevel": 5,
     "tags": [
       "food",
@@ -12,5 +12,190 @@
     ],
     "createdAt": "2025-09-03T20:07:36.639Z",
     "updatedAt": "2025-09-03T20:07:36.639Z"
+  },
+  {
+    "id": 2,
+    "name": "burger",
+    "category": "food",
+    "quantity": 100,
+    "price": 500,
+    "minStockLevel": 10,
+    "tags": [
+      "healthy",
+      "foodie"
+    ],
+    "createdAt": "2025-09-04T16:09:15.774Z",
+    "updatedAt": "2025-09-04T16:09:15.774Z"
+  },
+  {
+    "id": 3,
+    "name": "cls",
+    "category": "ff",
+    "quantity": null,
+    "price": 4,
+    "minStockLevel": 66,
+    "tags": [
+      "tag",
+      "hah"
+    ],
+    "createdAt": "2025-09-04T19:44:19.099Z",
+    "updatedAt": "2025-09-04T19:44:19.099Z"
+  },
+  {
+    "id": 4,
+    "name": "ddd",
+    "category": "dd",
+    "quantity": null,
+    "price": 22,
+    "minStockLevel": 22,
+    "tags": [
+      "jdjd",
+      "jd"
+    ],
+    "createdAt": "2025-09-04T19:46:00.413Z",
+    "updatedAt": "2025-09-04T19:46:00.413Z"
+  },
+  {
+    "id": 5,
+    "name": "ddd",
+    "category": "dd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "ddd"
+    ],
+    "createdAt": "2025-09-04T19:50:38.771Z",
+    "updatedAt": "2025-09-04T19:50:38.771Z"
+  },
+  {
+    "id": 6,
+    "name": "kdk",
+    "category": "kdk",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "kdk"
+    ],
+    "createdAt": "2025-09-04T19:51:43.017Z",
+    "updatedAt": "2025-09-04T19:51:43.017Z"
+  },
+  {
+    "id": 7,
+    "name": "hdhd",
+    "category": "kdkd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "jdd"
+    ],
+    "createdAt": "2025-09-04T19:57:29.345Z",
+    "updatedAt": "2025-09-04T19:57:29.345Z"
+  },
+  {
+    "id": 8,
+    "name": "waa",
+    "category": "dd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "dd"
+    ],
+    "createdAt": "2025-09-04T20:00:34.581Z",
+    "updatedAt": "2025-09-04T20:00:34.581Z"
+  },
+  {
+    "id": 9,
+    "name": "dd",
+    "category": "dd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "dd"
+    ],
+    "createdAt": "2025-09-04T20:03:54.659Z",
+    "updatedAt": "2025-09-04T20:03:54.659Z"
+  },
+  {
+    "id": 10,
+    "name": "ss",
+    "category": "ss",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "ss"
+    ],
+    "createdAt": "2025-09-04T20:09:10.797Z",
+    "updatedAt": "2025-09-04T20:09:10.797Z"
+  },
+  {
+    "id": 11,
+    "name": "ww",
+    "category": "ww",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "ww"
+    ],
+    "createdAt": "2025-09-04T20:10:06.909Z",
+    "updatedAt": "2025-09-04T20:10:06.909Z"
+  },
+  {
+    "id": 12,
+    "name": "1",
+    "category": "jdd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "1"
+    ],
+    "createdAt": "2025-09-04T20:13:47.020Z",
+    "updatedAt": "2025-09-04T20:13:47.020Z"
+  },
+  {
+    "id": 13,
+    "name": "dkd",
+    "category": "kdkd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "kdkd"
+    ],
+    "createdAt": "2025-09-04T20:18:59.894Z",
+    "updatedAt": "2025-09-04T20:18:59.894Z"
+  },
+  {
+    "id": 14,
+    "name": "ahah",
+    "category": "haha",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "haha"
+    ],
+    "createdAt": "2025-09-04T20:22:38.334Z",
+    "updatedAt": "2025-09-04T20:22:38.334Z"
+  },
+  {
+    "id": 15,
+    "name": "sjjs",
+    "category": "jdjd",
+    "quantity": null,
+    "price": null,
+    "minStockLevel": null,
+    "tags": [
+      "jdjd"
+    ],
+    "createdAt": "2025-09-04T20:25:51.225Z",
+    "updatedAt": "2025-09-04T20:25:51.225Z"
   }
 ]

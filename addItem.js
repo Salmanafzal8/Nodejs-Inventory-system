@@ -1,5 +1,4 @@
 const fs = require("fs");
-const readline = require("readline");
 
 const INVENTORY_FILE = "inventory.json";
 
@@ -14,17 +13,13 @@ function saveInventory(data) {
   fs.writeFileSync(INVENTORY_FILE, JSON.stringify(data, null, 2));
 }
 
-function addItem() {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
+function addItem(rl, callback) {
   let itemObj = {};
   const inventory = loadInventory();
-  const maxId = inventory.length > 0
-    ? Math.max(...inventory.map((item) => item.id || 0))
-    : 0;
+  const maxId =
+    inventory.length > 0
+      ? Math.max(...inventory.map((item) => item.id || 0))
+      : 0;
   itemObj.id = maxId + 1;
 
   rl.question("Enter a product name: ", (name) => {
@@ -44,16 +39,18 @@ function addItem() {
 
             const askTags = () => {
               rl.question("Enter tags (comma separated): ", (tagsInput) => {
-                const tags = [...new Set(
-                  tagsInput
-                    .split(",")
-                    .map((t) => t.trim())
-                    .filter((t) => t.length > 0)
-                )];
+                const tags = [
+                  ...new Set(
+                    tagsInput
+                      .split(",")
+                      .map((t) => t.trim())
+                      .filter((t) => t.length > 0)
+                  ),
+                ];
 
                 if (tags.length === 0) {
                   console.log("⚠️  Please enter at least one valid tag.");
-                  askTags(); 
+                  askTags();
                 } else {
                   itemObj.tags = tags;
 
@@ -64,15 +61,43 @@ function addItem() {
                   inventory.push(itemObj);
                   saveInventory(inventory);
 
-                  console.log("Item added successfully!");
+                  console.log(" Item added successfully!");
                   console.log(itemObj);
 
-                  rl.close();
+                  function printMenu() {
+                    console.log(
+                      "Choose the option in menu by pressing the key number"
+                    );
+                    console.log("1.Add new item");
+                    console.log("2.Exit Menu");
+                  }
+
+                  function options() {
+                    printMenu();
+                    rl.question("Choose Any?", (input) => {
+                      const choice = input.trim().toLowerCase();
+                      switch (choice) {
+                        case "1":
+                          console.log("You choose option 1 for add a item");
+                          addItem(rl, options);
+                          break;
+                        case "2":
+                          console.log("Exiting the aplication...");
+                          rl.close();
+                          break;
+                        default:
+                          console.log(
+                            "Invalid choice.Choose te correct option"
+                          );
+                          options();
+                      }
+                    });
+                  }
+                  options();
                 }
               });
             };
-
-            askTags(); 
+            askTags();
           });
         });
       });
@@ -80,4 +105,4 @@ function addItem() {
   });
 }
 
-module.exports = addItem
+module.exports = { addItem, loadInventory, saveInventory };
