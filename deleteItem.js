@@ -21,7 +21,7 @@ function deleteItem() {
   });
   rl.question("Enter the product id:", (id) => {
     const numericId = parseInt(id);
-    let inventory = loadInventory;
+    let inventory = loadInventory();
     const initialLength = inventory.length;
     inventory = inventory.filter((item) => item.id !== numericId);
 
