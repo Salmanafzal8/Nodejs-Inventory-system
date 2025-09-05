@@ -1,3 +1,0 @@
-id,name,category,quantity,price,minStockLevel,tags,createdAt,updatedAt
-1,Milk,food,10,700,5,food,healthy,2025-09-03T20:07:36.639Z,2025-09-03T20:07:36.639Z
-2,burger,food,100,500,10,healthy,foodie,2025-09-04T16:09:15.774Z,2025-09-04T16:09:15.774Z

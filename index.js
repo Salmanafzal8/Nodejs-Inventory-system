@@ -16,7 +16,7 @@ function printMenu() {
   console.log("1.Add item");
   console.log("2.Delete item");
   console.log("3.Update item");
-  console.log("4.Csv File");
+  console.log("4.Export Csv File");
   console.log("5.Exit Menu");
 }
 
