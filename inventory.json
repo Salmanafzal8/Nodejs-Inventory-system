@@ -17,7 +17,7 @@
     "id": 2,
     "name": "burger",
     "category": "food",
-    "quantity": 100,
+    "quantity": 98,
     "price": 500,
     "minStockLevel": 10,
     "tags": [

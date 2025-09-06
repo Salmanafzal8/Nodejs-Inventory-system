@@ -18,7 +18,7 @@ function updateItem(rl, callback) {
     const item = inventory.find((it) => it.id === numericId);
 
     if (!item) {
-      console.log("⚠️ Item not found.");
+      console.log("Item not found.");
       return callback(); 
     }
 
@@ -98,3 +98,5 @@ function updateItem(rl, callback) {
 }
 
 module.exports = updateItem;
+
+

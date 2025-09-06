@@ -13,11 +13,11 @@ function exportCsv(inventory) {
 
   let csv = "";
   const headers = Object.keys(inventory[0]);
-  csv += headers.join(",") + "\n";
+  csv += headers.join("          ") + "\n";
 
   inventory.forEach((obj) => {
     const values = headers.map((header) => obj[header]);
-    csv += values.join(",") + "\n";
+    csv += values.join("          ") + "\n";
   });
 
   fs.writeFile("inventory.csv", csv, "utf-8", (err) => {
