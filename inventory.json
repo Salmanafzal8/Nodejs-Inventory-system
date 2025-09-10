@@ -1,74 +1,47 @@
 [
   {
     "id": 1,
-    "name": "Milk",
+    "name": "pizza",
     "category": "food",
-    "quantity": 10,
-    "price": 700,
-    "minStockLevel": 5,
+    "quantity": 100,
+    "price": 800,
+    "minStockLevel": 90,
     "tags": [
-      "food",
+      "cheezy",
       "healthy"
     ],
-    "createdAt": "2025-09-03T20:07:36.639Z",
-    "updatedAt": "2025-09-03T20:07:36.639Z"
+    "createdAt": "2025-09-10T19:54:05.589Z",
+    "updatedAt": "2025-09-10T19:54:05.589Z",
+    "deleted": false
   },
   {
     "id": 2,
-    "name": "burger",
-    "category": "food",
-    "quantity": 98,
-    "price": 500,
-    "minStockLevel": 10,
-    "tags": [
-      "healthy",
-      "foodie"
-    ],
-    "createdAt": "2025-09-04T16:09:15.774Z",
-    "updatedAt": "2025-09-04T16:09:15.774Z"
-  },
-  {
-    "id": 3,
-    "name": "fish",
-    "category": "food",
-    "quantity": 100,
-    "price": 50,
-    "minStockLevel": 10,
-    "tags": [
-      "healthy",
-      "sefood"
-    ],
-    "createdAt": "2025-09-10T17:46:46.772Z",
-    "updatedAt": "2025-09-10T17:46:46.772Z"
-  },
-  {
-    "id": 4,
-    "name": "pizza",
-    "category": "foodie",
-    "quantity": 100,
-    "price": 100,
+    "name": "biryani",
+    "category": "desi food",
+    "quantity": 1000,
+    "price": 300,
     "minStockLevel": 10,
     "tags": [
       "spicy",
-      "juicy",
-      "cheesy"
+      "desi"
     ],
-    "createdAt": "2025-09-10T18:44:10.510Z",
-    "updatedAt": "2025-09-10T18:44:10.510Z"
+    "createdAt": "2025-09-10T19:55:45.360Z",
+    "updatedAt": "2025-09-10T19:55:45.360Z",
+    "deleted": false
   },
   {
-    "id": 5,
-    "name": "beef",
-    "category": "meat",
+    "id": 3,
+    "name": "karahi",
+    "category": "food",
     "quantity": 100,
-    "price": 1000,
-    "minStockLevel": 30,
+    "price": 500,
+    "minStockLevel": 10,
     "tags": [
-      "healthy",
-      "strong"
+      "spicy",
+      "desi"
     ],
-    "createdAt": "2025-09-10T19:07:23.164Z",
-    "updatedAt": "2025-09-10T19:07:23.164Z",
+    "createdAt": "2025-09-10T19:56:22.783Z",
+    "updatedAt": "2025-09-10T19:56:22.783Z",
     "deleted": false
   }
 ]

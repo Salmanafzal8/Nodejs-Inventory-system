@@ -57,6 +57,7 @@ function addItem(rl, callback) {
                   const now = new Date().toISOString();
                   itemObj.createdAt = now;
                   itemObj.updatedAt = now;
+                  itemObj.deleted = false
 
                   inventory.push(itemObj);
                   saveInventory(inventory);
