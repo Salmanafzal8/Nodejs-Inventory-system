@@ -49,7 +49,7 @@ function addItem(rl, callback) {
                 ];
 
                 if (tags.length === 0) {
-                  console.log("⚠️  Please enter at least one valid tag.");
+                  console.log(" Please enter at least one valid tag.");
                   askTags();
                 } else {
                   itemObj.tags = tags;
