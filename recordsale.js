@@ -3,7 +3,7 @@ const { loadInventory, saveInventory } = require('./addItem');
 function recordsale(rl, callback) {
   const inventory = loadInventory();
 
-  rl.question("Enter Item ID to update: ", (idInput) => {
+  rl.question("Enter a Item ID to update: ", (idInput) => {
     const itemId = parseInt(idInput);
     const item = inventory.find((i) => i.id === itemId);
 
