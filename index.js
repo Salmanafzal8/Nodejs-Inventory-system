@@ -1,4 +1,3 @@
-const fs = require("fs");
 const readline = require("readline");
 const { addItem, loadInventory } = require("./addItem");
 const deleteItem = require("./deleteItem");
@@ -6,7 +5,6 @@ const updateItem = require("./updateItem");
 const exportCsv = require("./exportCsv");
 const viewInventory = require("./viewInventory");
 const recordsale = require("./recordsale");
-const { callbackify } = require("util");
 
 const rl = readline.createInterface({
   input: process.stdin,

@@ -16,7 +16,6 @@
           const totalValue = item.price * item.quantity;
           console.log(`Product: ${item.name}, Price: $${item.price.toFixed(2)}, Quantity: ${item.quantity}, Total Value: $${totalValue.toFixed(2)}`);
         });
-        console.log("------------------------");
 
       } catch (parseErr) {
         console.error('Error parsing JSON:', parseErr);

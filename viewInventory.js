@@ -1,4 +1,3 @@
-const fs = require("fs");
 const { loadInventory } = require("./addItem");
 
 let inventory = loadInventory();
@@ -16,5 +15,4 @@ function viewInventory(inventory) {
 
   return csv;
 }
-
 module.exports = viewInventory;
