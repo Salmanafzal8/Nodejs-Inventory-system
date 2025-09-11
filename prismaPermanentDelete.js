@@ -10,11 +10,11 @@ const rl = readline.createInterface({
 const question = (str) => new Promise((resolve) => rl.question(str,resolve))
 
 async function permanentDelete() {
-    let inventory = loadInventory()
+    let inventory = await loadInventory()
     const inputId = await question("Enter a ID of a item you want to delete:")
     const numericId = parseInt(inputId)
     inventory = inventory.filter((item)=> item.id !== numericId)
-    saveInventory(inventory)
+   await saveInventory(inventory)
     console.log("Item permananently deleted")
 }
 permanentDelete()

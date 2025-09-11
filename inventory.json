@@ -43,5 +43,21 @@
     "createdAt": "2025-09-10T19:56:22.783Z",
     "updatedAt": "2025-09-10T19:56:22.783Z",
     "deleted": false
+  },
+  {
+    "id": 4,
+    "name": "chocolate",
+    "category": "sweet",
+    "quantity": 1000,
+    "price": 200,
+    "minStockLevel": 20,
+    "tags": [
+      "weet",
+      "creamy",
+      "chocolaty"
+    ],
+    "createdAt": "2025-09-11T16:11:23.771Z",
+    "updatedAt": "2025-09-11T16:11:23.771Z",
+    "deleted": "2025-09-11T16:11:48.496Z"
   }
 ]

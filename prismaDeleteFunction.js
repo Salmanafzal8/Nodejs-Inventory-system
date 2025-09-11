@@ -9,17 +9,19 @@ const rl = readline.createInterface({
 const question = (str) => new Promise((resolve) => rl.question(str, resolve));
 
 async function softDelete() {
-let inventory = loadInventory()
+let inventory = await loadInventory()
 
 const inputId = await question("Enter a ID of a item you want to delete:")
 const numericId = parseInt(inputId)
 inventory = inventory.map(item => {
+      const now = new Date().toISOString();
+
     if (item.id === numericId){
-        return {...item , deleted : true}
+        return {...item , deletedAt : now}
     }
     return item
 })
-    saveInventory(inventory)
+   await saveInventory(inventory)
     console.log("Item deleted succesfully")
 }
 softDelete()

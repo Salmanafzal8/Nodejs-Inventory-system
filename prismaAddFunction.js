@@ -44,7 +44,7 @@ async function addItem() {
   const now = new Date().toISOString();
   newItem.createdAt = now;
   newItem.updatedAt = now;
-  newItem.deleted = false;
+  newItem.deleted = null;
 
   inventory.push(newItem);
   await saveInventory(inventory);
