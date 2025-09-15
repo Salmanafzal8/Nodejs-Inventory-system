@@ -1,6 +1,6 @@
-const {saveInventory,loadInventory} = require("./addItem")
+  const {saveInventory,loadInventory} = require("./addItem")
 
-function deleteItem(rl , callback) {
+function deleteItem(rl ) {
   rl.question("Enter the product id:", (id) => {
     const numericId = parseInt(id);
     let inventory = loadInventory();

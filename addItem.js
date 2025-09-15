@@ -13,7 +13,7 @@ function saveInventory(data) {
   fs.writeFileSync(INVENTORY_FILE, JSON.stringify(data, null, 2));
 }
 
-function addItem(rl, callback) {
+function addItem(rl) {
   let itemObj = {};
   const inventory = loadInventory();
   const maxId =
